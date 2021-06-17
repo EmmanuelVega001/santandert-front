@@ -6,6 +6,57 @@ button{
     background-color: cadetblue;
 }
 body{
-    background-color:rgb(155, 212, 178) ;
-    background-image: url(https://www.taringa.net/posts/imagenes/19651872/Mega-Post-Wallpapers-Minimalistas-HD-4K-para-tus-fondos.html);
+    background-color:white ;
 }
+
+li{
+    display: inline;
+    margin-right: 25px;
+    margin-left: 25px;
+    color: rgb(182, 208, 148);
+}
+header > *{
+    display: inline-block;
+}
+.header {
+    margin-top: 40px;
+    margin-left: 20px;
+    margin-right: 20px;
+    font-size: 0;
+    height: 45px;
+    font-family: sans-serif;
+  }
+  
+  .navbar {
+    width: 70%;
+    height: 45px;
+    text-align: center;
+    color: #025157;
+    font: sans-serif;
+  }
+  
+  
+  .actions {
+    width: 15%;
+    text-align: right;
+    font-size: 14px;
+  }
+  
+  .actions > * {
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+  
+  .actions a {
+    color: #67b54b;
+  }
+  .actions button{
+      color: white;
+      background-color: #67b54b;
+      padding-left: 14px;
+      padding-right: 14px;
+      padding-top: 12px;
+      padding-bottom: 12px;
+
+  }
+  
