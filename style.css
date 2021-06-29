@@ -14,16 +14,18 @@ li{
     margin-right: 25px;
     margin-left: 25px;
     color: rgb(182, 208, 148);
-}
+  }
 header > *{
     display: inline-block;
 }
 .fixed-header {
-  position: fixed;
+  position: absolute;
   top: 0px;
   right: 0px;
   left: 0px;
   background-color: #fffaf6;
+
+
 }
 
 
@@ -190,9 +192,7 @@ header > *{
 .succes-stories .img-user .card .card-media  img {
   display: flex;
   justify-content: center;
-
   width: 100%;
-  max-height: 16vw;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
 
@@ -247,7 +247,7 @@ header > *{
 }
 .succes-stories .img-user .card .card-footer button{
   display: flex;
-  font-family: "Ginebra", serif;
+  font-family:Arial, Helvetica, sans-serif;
   padding-left:80px ;
   padding-right:80px ;
   height: 50px;
@@ -258,8 +258,152 @@ header > *{
   border-bottom-right-radius: 10px;
   color: white;
   flex-direction: column;
+}
+.how-works{
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+
+.how-works .content h3{
+  color: #025157;
+  font-size: 50px;
+  line-height: 60px;
+  font-weight: 400;
+  font-family:Arial, Helvetica, sans-serif;
+  margin-bottom: 8px;
+}
+.how-works .content p{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  margin: 5px 310px;
   
+}
+.how-works .content a{
+  color: #478d19;
+}
+.how-works .content button{
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+  margin-top: 10px;
+  padding: 10px 100px;
+  font-weight: 300;
+  font-size: 20px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.publish .publish-cards{
+  margin-left: 5px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+
+}
+.publish .publish-cards .cards-content{
+  display: flex;
+  background-color:white;
+  margin-top: 15px;
+  margin-left: 5px;
+  flex-direction: column;
+  border-top: 1px solid gray;
+  border-right: 1px solid gray;
+  border-bottom: 1px solid gray;
+  border-left: 1px solid gray;
+  max-width: 300px;
+  max-height: 800px;
+
+}
+.publish .publish-cards .cards-content .logo{
+  width: 30px;
+}
+.publish .publish-cards .cards-content .banner{
+  width: 200px;
+  height: 400px;
+}
+.publish .publish-cards .cards-content .statement{
+  text-align: center;
+  margin: 0px 60px;
+}
+.publish .publish-cards .cards-content .statement p{
+font-size:18px;
+}
+.publish .publish-cards .cards-content .statement a{
+  font-size:18px;
+  color: #478d19;
+  }
+  .publish .publish-cards .cards-content .statement h3{
+    font-size:12px;
+    }
+
+/** dispositivos móviles en vista viewport (vertical) */
+@media (max-width: 575px) { 
+  li{
+  margin-top: 150px;
+  color: black;
+}
+.fixed-header {
+
+  padding-right:100%;
 
 }
 
+  .navbar,  .actions {
+    display: none;
+  }
 
+  h1 {
+    font-size: 20px;
+    margin-top: 80px;
+  }
+  .promo {
+    display: flex;
+    flex-direction: column;
+
+  }
+  .features {
+  grid-template: repeat(4, 1fr) / 1fr;
+}.how-works .content p{
+  margin:2%;
+}
+.publish .publish-cards{
+  margin-left: 20%;
+  grid-template: repeat(4, 1fr)/1fr;
+
+}
+.publish .publish-cards .cards-content .banner{
+height: 100%;
+width: 100%;
+margin:0%;
+
+}
+.publish .publish-cards .cards-content .statement{
+  margin: 0%;
+  
+  }
+  .succes-stories{flex-direction:column ;}
+
+.succes-stories .img-user .card {margin-top:15px ; height: 60%;}
+
+
+/** dispositivos pequeños en vista landscape (horizontal) */
+@media (min-width: 576px) and (max-width: 767px) {
+  
+}
+
+/** dispositivos medianos (tablets) */
+@media (min-width: 768px) and (max-width: 991px) {
+  
+}
+
+/** dispositivos grandes (desktops) */
+@media (min-width: 992px) and (max-width: 1199px) {
+  
+}
+
+/** dispositivos extra grandes (monitores grandes, tvs) */
+@media (min-width: 1200px) {
+  
+}
+  
